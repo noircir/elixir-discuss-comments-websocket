@@ -22,6 +22,8 @@ defmodule Discuss.Router do
     # post "/topics", TopicController, :create
     # get "/topics/:id/edit", TopicController, :edit
     # put "/topics/:id", TopicController, :update
+    
+    #  'resources' serves all default RESTful routes
     resources "/", TopicController
   end
 
