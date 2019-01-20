@@ -1,1 +1,16 @@
-<%= @topic.title %>
+<h5><%= @topic.title %></h5>
+
+<div class="input-field">
+    <textarea class="materialize-textarea"></textarea>
+    <button class="btn">Add Comment</button>
+    <ul class="collection">
+    </ul>
+</div>
+
+<%# The createSocket script runs every time we open the 'show' page %>
+<%# DOMContentLoaded = waiting for the page to load before calling createSocket() %>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        window.createSocket(<%= @topic.id %>)
+    });
+</script>

@@ -12,7 +12,7 @@ config :logger, level: :warn
 # Configure your database
 config :discuss, Discuss.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "elena_ko",
+  username: System.get_env("CONFIG_USERNAME"),
   password: "",
   database: "discuss_test",
   hostname: "localhost",

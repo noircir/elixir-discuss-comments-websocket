@@ -12,8 +12,8 @@ defmodule Discuss.AuthController do
     def callback(%{assigns: %{ueberauth_auth: auth}} = conn, _params) do
         # IO.puts "+++++++++++++++"
         # IO.inspect(conn.assigns.ueberauth_auth)
+        # IO.puts "+++++++++++++++"
         # IO.inspect(auth)
-        # IO.inspect(params)
         # IO.puts "+++++++++++++++"
         # IO.inspect(params)
         # IO.puts "+++++++++++++++"
